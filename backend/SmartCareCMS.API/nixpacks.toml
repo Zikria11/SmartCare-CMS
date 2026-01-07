@@ -1,0 +1,8 @@
+[phases.build]
+cmds = ["dotnet publish -c Release -o out"]
+
+[phases.start]
+cmd = "dotnet out/SmartCareCMS.API.dll"
+
+[variables]
+NIXPACKS_NO_MUSL = "1"
